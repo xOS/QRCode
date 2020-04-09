@@ -22,7 +22,7 @@ if ( $url == 'help'){
     echo '<h1>在线二维码API服务</h1>
     使用前请仔细查看参数说明：<br />
     <br />
-    text&nbsp&nbsp: 二维码对应的内容<br /><br />
+    text&nbsp&nbsp: 二维码对应的内容,默认值: help<br /><br />
     m&nbsp&nbsp: 二维码白色边框尺寸,默认值: 3px<br /><br />
     e&nbsp&nbsp: 容错级别(errorLevel)，可选参数如下(默认值 H)：<br /><br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbspL&nbsp;&nbsp     7%的字码可被修正<br />
