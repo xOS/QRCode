@@ -8,7 +8,7 @@
 include "../code/phpqrcode.php";
 
 //取得GET参数
-$url        = isset($_GET["url"]) ? $_GET["url"] : 'help';
+$url        = isset($_GET["text"]) ? $_GET["text"] : 'help';
 $errorLevel = isset($_GET["e"]) ? $_GET["e"] : 'L';
 $PointSize  = isset($_GET["p"]) ? $_GET["p"] : '3';
 $margin     = isset($_GET["m"]) ? $_GET["m"] : '0';
@@ -22,15 +22,15 @@ if ( $url == 'help'){
     echo '<h1>在线二维码API服务</h1>
     使用前请仔细查看参数说明：<br />
     <br />
-    url&nbsp&nbsp: 二维码对应的网址<br /><br />
-    m&nbsp&nbsp: 二维码白色边框尺寸,缺省值: 3px<br /><br />
-    e&nbsp&nbsp: 容错级别(errorLevel)，可选参数如下(缺省值 L)：<br /><br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbspL水平    7%的字码可被修正<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbspM水平    15%的字码可被修正<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbspQ水平    25%的字码可被修正<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbspH水平    30%的字码可被修正<br /><br />
-    p&nbsp&nbsp: 二维码尺寸，可选范围1-10(具体大小和容错级别有关)（缺省值：6）<br /><br />
-    常规用法：<a href="https://api.nange.cn/code?m=3&e=H&p=6&url=https://www.nange.cn/" target="_blank">https://api.nange.cn/code?m=3&e=H&p=6&url=https://www.nange.cn/</a><br /><br />
+    text&nbsp&nbsp: 二维码对应的内容<br /><br />
+    m&nbsp&nbsp: 二维码白色边框尺寸,默认值: 3px<br /><br />
+    e&nbsp&nbsp: 容错级别(errorLevel)，可选参数如下(默认值 H)：<br /><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbspL&nbsp;&nbsp     7%的字码可被修正<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbspM&nbsp;&nbsp    15%的字码可被修正<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbspQ&nbsp;&nbsp    25%的字码可被修正<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbspH&nbsp;&nbsp    30%的字码可被修正<br /><br />
+    p&nbsp&nbsp: 二维码尺寸，可选范围1-10(具体大小和容错级别有关)（默认值：6）<br /><br />
+    常规用法：<a href="https://api.nange.cn/code?m=3&e=H&p=6&text=https://www.nange.cn/" target="_blank">https://api.nange.cn/code?m=3&e=H&p=6&text=https://www.nange.cn/</a><br /><br />
     
     ';
 	exit();
