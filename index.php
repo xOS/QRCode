@@ -9,9 +9,9 @@ include "../code/phpqrcode.php";
 
 //取得GET参数
 $url        = isset($_GET["text"]) ? $_GET["text"] : 'help';
-$errorLevel = isset($_GET["e"]) ? $_GET["e"] : 'L';
+$errorLevel = isset($_GET["e"]) ? $_GET["e"] : 'H';
 $PointSize  = isset($_GET["p"]) ? $_GET["p"] : '3';
-$margin     = isset($_GET["m"]) ? $_GET["m"] : '0';
+$margin     = isset($_GET["m"]) ? $_GET["m"] : '6';
 preg_match('/http:\/\/([\w\W]*?)\//si', $url, $matches);
 
 //简单判断
