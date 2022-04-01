@@ -1,7 +1,7 @@
 <?php
 /**
 * PHP在线网址二维码API源码
-* 地址：https://api.nange.cn/code
+* 地址：https://zhangge.net/
 **/
 
 //载入qrcode类
